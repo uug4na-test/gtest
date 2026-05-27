@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: Auto-merge passing PRs
+    conditions:
+      - check-success=ci
+    actions:
+      comment:
+        message: "Test rule from {{ author }}"
